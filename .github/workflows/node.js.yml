@@ -1,0 +1,20 @@
+name: github-hosted-pipeline
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - development
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: Introduction
+        run: echo "My name is Emmanuel, thank you"
+        shell: bash
+      
+      
