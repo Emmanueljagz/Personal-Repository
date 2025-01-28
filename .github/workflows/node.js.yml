@@ -16,5 +16,11 @@ jobs:
       - name: Introduction
         run: echo "My name is Emmanuel, thank you"
         shell: bash
-      
-      
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Exit
+        run: echo "Goodbye, thank you"
+        shell: bash
